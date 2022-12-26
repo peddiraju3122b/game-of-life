@@ -1,0 +1,6 @@
+FROM tomcat:8-jdk8
+LABEL Version="1.0"
+LABEL Description="This-is-GAME-OF-LIFE"
+ADD https://github.com/peddiraju3122b/game-of-life.git /usr/local/tomcat/webapps/gameoflife.war
+EXPOSE 8080
+CMD ["catalina.sh","run"]
